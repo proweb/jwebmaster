@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_JWEBMASTER</name>
+	<author>Sergey Mochalov</author>
+	<creationDate>July 2014</creationDate>
+	<copyright>Copyright (C) PROВеб консалтинг. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mail@k2joomla.ru</authorEmail>
+	<authorUrl>k2joomla.ru</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_SYSTEM_JWEBMASTER_DESCRIPTION</description>
+	<files>
+		<filename plugin="jwebmaster">jwebmaster.php</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_jwebmaster.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_jwebmaster.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_jwebmaster.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_jwebmaster.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="sitedomain" type="text" size="40" label="PLG_JWEBMASTER_SITE_DOMAIN" default="http://domain.ru" description="PLG_JWEBMASTER_SITE_DOMAIN_DESC"/>
+			<field name="beforebody_custom_code" type="textarea" label="Коды счетчиков" default="Тут код счетчиков Google Analytics и Метрики" description="PLG_JWEBMASTER_SITE_DOMAIN_DESC"/>
+			</fieldset>
+			<fieldset name="advanced">
+			</fieldset>
+		</fields>
+	</config>
+</extension>
